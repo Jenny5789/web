@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+  <meta charset="UTF-8">
+  <title>멀티미디어 파일 삽입하기</title>
+</head>
+<body>
+  <h1>웹 문서에 PDF 파일 삽입하기</h1>
+  <!-- Do it! object 태그를 사용해 product.pdf 파일 삽입하기 -->
+<object data="product.pdf" width="900" height="800"></object>
+<!-- object data 웹 안에서 pdf 파일을 보는 것, 기본 사이즈 설정-> width, height를 넣어 크기 조절-->
+ <br />
+ <embed src="medias/spring.mp3">   <!--embed는 자동재생-->
+<audio src="medias/spring.mp3" controls></audio>   
+<!-- audio는 사용자가 요청할 때 재생됨
+controls가 들어가야 재생막대가 표시됨-->
+<audio src="medias/spring.mp3" controls autoplay></audio>
+<!-- autoplay가 들어감으로서 자동재생됨-->
+<video src="medias/salad.mp4" controls></video>
+<!--재생 버튼을 눌러야 재생됨-->
+<video src="medias/salad.mp4" controls autoplay muted></video>
+<!-- autoplay muted 자동재생되지만 음소거로 진행-->
+<video src="medias/salad.mp4" controls loop></video>
+<!-- loop하여 반복재생-->
+<video src="medias/salad.mp4" controls poster="images/salad.jpg" width="700"></video>
+<!-- poster 재생되기 전까지 화면에 표시될 포스터가 나옴. 미설정 시 검정화면이 나온다-->
+<!--width, height 플레이어의 너비와 높이 설정-->
+</body>
+</html>
