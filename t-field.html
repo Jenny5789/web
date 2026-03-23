@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+  <meta charset="UTF-8">
+  <title>레드향 주문하기</title>
+</head>
+<body>
+  <h1>레드향 주문하기</h1>
+  <form action="">
+    <fieldset>
+      <legend>상품 선택</legend>
+     
+    </fieldset>
+
+    <fieldset>
+      <legend>배송 정보</legend>
+      <!-- Do it! 배송 정보 입력하는 폼 만들기 -->
+      <!--<label for></label><input id> 이용해보자-->
+      <ul>
+        <li>
+          <label for="username">이름</label>
+          <input type="text" id="username" />        
+          <!-- id="username"을 적음으로서 이름과 이름 입력창이 하나의 묶음으로 인식함-->
+        </li>
+         <li>
+          <label for="addr">배송주소</label>
+          <input type="url" id="addr" />
+          <!-- url 주소 입력할 수 있는 필드-->
+        </li>
+         <li>
+          <label for="mail">이메일</label>
+          <input type="email" id="mail" />
+          <!-- 이메일 주소 입력할 수 있는 필드-->
+        </li>
+         <li>
+          <label for="phone">연락처</label>
+          <input type="tel" id="phone" />
+          <!-- 전화번호 입력할 수 있는 필드-->
+        </li>
+      </ul>
+    </fieldset> 
+    <input type="submit"/>
+    <!-- 제출 버튼 생김-->
+    
+  </form>
+</body>
+</html>

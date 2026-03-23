@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+	<meta charset="UTF-8">
+	<title>웹 폼</title>
+</head>
+<body>
+	<form>
+	<!-- Do it! 폼 안에 자바스크립트 실행 버튼 삽입하기 -->
+	 	<input 
+		type="button" 
+		value="창열기"             
+		onclick="window.open('notice.html')"/>
+		<input type="file" /><br/>
+		이름: <input type="text" /><br/>
+		아이디: <input type="hidden" value="admin"/>
+		<!-- 클라이언트에겐 안 보이지만 서버와 데이터를 주고 받을 때 값이 숨겨져 있지만 사용됨-->
+		<input type="submit" />
+	</form>
+</body>
+</html>

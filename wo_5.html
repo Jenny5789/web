@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>서비스 신청서 설계</title>
+</head>
+<body>
+    <h1>나만의 서비스 신청서 설계하기</h1>
+<form>
+        <fieldset>
+        <legend>사용자 정보</legend>
+         <p>
+            <label for="name">이름</label>
+            <input type="text" id="name" required autofocus>
+        </p>
+        <p>
+            <label for="user-name">아이디</label>
+            <input type="text" id="user-name" placeholder="4자~10자 사이, 공백없이" required>
+        </p>
+        <p>
+            <label for="password_1">비밀번호</label>
+            <input type="password" id="password_1" placeholder="문자와 숫자, 특수 기호 포함" required>
+        </p>
+        <p>
+            <label for="password_2">비밀번호 확인</label>
+            <input type="password" id="password_2" placeholder="한 번 더 입력" required>
+        </p>
+        <p>
+            <label for="mail">이메일</label>
+            <input type="email" id="mail" >(선택)
+        </p>
+       
+        </fieldset>
+
+        <fieldset>
+             <legend> 신청</legend>
+        <p>
+            <label type="date">신청 날짜</label>
+             <input type="date" name="date" min="2026-05-15" max="2026-05-17"/> <br>
+
+        </p>
+        <p>
+
+             종목선택
+            <select name="division" >
+            <optgroup label="싱글">
+            <option value="man">남자 싱글</option>
+            <option value="woman">여자 싱글</option>
+            </optgroup>
+            <optgroup label="더블">
+            <option value="man">남자 더블</option>
+            <option value="woman">여자 더블</option>
+            </optgroup>
+            <optgroup label="릴레이 ">
+            <option value="man">혼성 릴레이</option>
+            <option value="woman">남자 릴레이</option>
+            <option value="woman">여자 릴레이</option>
+            </optgroup>
+       </select>
+       <p>           
+            <label>총 참여 횟수</label>
+            <input type="number"min="0" value="1">회<br>
+            <input type="radio" name="hyrox" id="sel1" value="sel1" checked="checked">없음</label></li><br>
+            <input type="radio" name="hyrox" id="sel2" value="sel2">싱글</label></li><br>
+            <input type="radio" name="hyrox" id="sel2" value="sel2">더블</label></li><br>
+            <input type="radio" name="hyrox" id="sel3" value="sel3">릴레이</label></li><br>
+        </p>
+        </fieldset>
+
+        <fieldset>
+            <legend>기타 사항</legend>
+            알게된 경로(복수 선택 가능)
+            <ul>
+                <li><label><input type="checkbox" name="prod" id="sns" /><label for="sns"> SNS</label></li>
+                <li><label><input type="checkbox" name="prod" id="per" /><label for="per"> 지인</label></li>
+                <li><label><input type="checkbox" name="prod" id="ext" /><label for="ext"> 기타</label></li><br>
+            </ul>
+            도착 예정 시간 
+            <input type="time" name="time" value="12:00" /><br><br>
+
+            요구사항
+            <label for="memo"></label>
+            <textarea cols="40" rows="3"></textarea><br><br>
+
+            <input type="radio" name="mailing" id="mailing_y" value="mailing_yes">
+            <label for="mailing_y">메일 수신</label>
+            <input type="radio" name="mailing" id="mailing_n" value="mailing_no">
+            <label for="mailing_n">메일 수신 안 함</label>
+            
+        </fieldset>
+
+        <br>
+            <input type="submit" value="신청하기">
+            <input type="reset" value="취소하기">
+        
+    </form>
+</body>
+</html>

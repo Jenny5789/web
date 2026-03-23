@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+  <meta charset="UTF-8">
+  <title>레드향 주문하기</title>
+</head>
+<body>
+  <h1>레드향 주문하기</h1>
+  <form action="">
+    <!-- Do it! 드롭다운 목록 만들기 -->
+    상품선택 
+    <select name="prod" size="4">
+      <!-- size 입력하여 default 4개 나오게 됨-->
+      <option value="s3">선물용 3kg</option>
+      <option value="s5">선물용 5kg</option>
+      <option value="f3" selected >가정용 3kg</option>       
+      <!-- selected 적어 default 값 변경가능-->
+      <option value="f5">가정용 5kg</option>
+      </select>
+<br>
+<br>
+
+ 상품선택 
+    <select name="prod" size="3" multiple>
+      <!-- multiple 입력하여 다중 선택 가능하게 됨-->
+      <option value="s3">선물용 3kg</option>
+      <option value="s5">선물용 5kg</option>
+      <option value="f3" selected >가정용 3kg</option>       
+      <!-- selected 적어 default 값 변경가능-->
+      <option value="f5">가정용 5kg</option>
+    </select>
+
+<br>
+ <br>
+
+ 상품선택 
+    <select name="prod" >
+      <optgroup label="선물용">
+      <!-- 선택지가 많을 경우 관련 항목끼리 제목을 달아 그룹화할 때 사용-->
+      <option value="s3">선물용 3kg</option>
+      <option value="s5">선물용 5kg</option>
+      </optgroup>
+      <!-- 선택지가 많을 경우 관련 항목끼리 제목을 달아 그룹화할 때 사용-->
+      <optgroup label="가정용">
+      <option value="f3" selected >가정용 3kg</option>
+      <option value="f5">가정용 5kg</option>
+      </optgroup>
+    </select>
+
+  </form>
+</body>
+</html>

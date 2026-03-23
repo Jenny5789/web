@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="ko">
+  <head>
+		<meta charset="UTF-8">
+		<title>로그인</title>
+  </head>
+  <body>
+	<form>
+    <fieldset>
+      <!-- Do it! 텍스트 필드와 비밀번호 필드가 있는 로그인 폼 만들기 -->
+      <label>아이디 <input type="text"  size="15" maxlength="10"></label><br>    
+      <!-- size="10" : 사용자에게 보여지는 창 크기 설정함-->
+      <!-- maxlength="10" : 최대 입력 가능한 문자수 설정-->
+      <label>비밀번호 <input type="password" size="15" maxlength="10"></label><br>
+      <br/>
+    
+      <input type="submit" />
+      <!-- value 값을 입력 안하면 '제출' 버튼이 자동 생성됨-->
+      <input type="submit" value="send"/>             
+      <!-- value 값을 'send'로 변경 시 서버측에 전달되는 값(제출)과는 별개.-->
+      <input type="reset" value="cancel"/>            
+      <!--reset 값을 입력하여 초기화 버튼 삽입-->
+      <input type="submit" src="./images/login.png"/>   
+      <!-- 이미지 연결-->
+    </fieldset>
+  </form>
+  </body>
+</html>

@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>점심 메뉴 선호도 조사</title>
+</head>
+<body>
+    <form>
+        <fieldset>
+            <legend> 즐거운 점심시간 선호도 조사</legend>
+            <label>이름:<input type="text" id="user-id" size="20" placeholder="성함을 적어주세요" ></label>
+            <p><b>1. 오늘 가장 당기는 메뉴 종류는?</b></p>
+            <ul>
+                <input type="radio" name="han" id="sel1" value="sel1" checked="checked">한식 (비빔밥, 김치찌개)</label></li><br>
+                <input type="radio" name="han" id="sel2" value="sel2">중식 (짜장면, 마라탕)</label></li><br>
+                <input type="radio" name="han" id="sel3" value="sel3">양식/일식 (돈가스, 초밥)</label></li><br>
+            </ul>
+
+            <p><b>2. 못 먹거나 피하는 식재료가 있나요?(모두 선택)</b></p>
+             <ul>
+                <input type="checkbox" name="pea" id="sel1" value="sel1">견과류</label></li>
+                <input type="checkbox" name="milk" id="sel2" value="sel2">유제품</label></li>
+                <input type="checkbox" name="fish" id="sel3" value="sel3">해산물</label></li>
+                <input type="checkbox" name="none" id="sel4" value="sel4">없음</label></li>
+            </ul>
+
+            <p><b>3. 희망하는 점심 식사 시간: </b></p>
+
+                <input type="time" name="time" value="12:00"/>      
+
+            
+            <p><b>4. 선호하는 결제 방식: </b></p>
+                <select id="pay">
+                <option value="per" selected>각자 계산</option>
+                <option value="dutch" selected>더치페이</option>
+                </select> 
+
+            <p><b>5. 식당에 바라는 점: </b></p>
+            <label for="memo"></label>
+            <textarea cols="40" rows="5" placeholder="예: 밥 많이 주세요!"></textarea>
+
+        </fieldset>
+
+    <input type="submit" value="조사 결과 제출하기">
+    <input type="reset" value="다시 작성">
+    
+    </form>
+
+</body>
+</html>
