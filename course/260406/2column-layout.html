@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>2단 레이아웃</title>
+    <style>
+        * {
+            box-sizing: border-box;
+            margin: 0;
+            padding: 0;
+        }
+       #wrapper{
+        width:1200px;
+        /*border: 1px solid gray;*/
+       }
+       #header{
+        width: 100%;
+        height: 120px;
+        background: #ccc;
+       }
+       #sidebar{
+        width: 300px;
+        height: 600px;
+        background: #aaa;
+        float: left;
+       }
+        #contents{
+        width: 900px;
+        height: 600px;
+        background: #646464;
+        float: left;
+       }
+        #footer{
+        width: 100%;
+        height: 100px;
+        background: #aaa;
+        clear: both;
+       }
+    </style>
+</head>
+<body>
+    <div id="wrapper">
+        <div id="header">헤더</div>
+        <div id="sidebar">사이드바</div>
+        <div id="contents">본문</div>
+        <div id="footer">푸터</div>
+
+    </div>
+</body>
+</html>
