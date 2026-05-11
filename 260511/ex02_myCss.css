@@ -1,0 +1,22 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+.wrap{
+    position: relative;
+    width: 440px;
+    height: 440px;
+    border: 2px solid black;
+}
+
+.box{
+    width: 100px;
+    height: 100px;
+    border-radius:0px 50px 0px 50px;
+    position: absolute;
+}
+
+.red {background-color: red;     top: 20px;   left: 20px;}
+.green {background-color: green; top: 120px; left: 120px;}
+.blue {background-color: blue;   top: 220px; left: 220px;}
+.gray {background-color: gray;   top: 320px; left: 320px;}

@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        table{
+            width: 400px
+        }
+        table, td {
+            border-color: white;
+        }
+        .step-header {
+            height: 50px;
+            background-color: gray;
+            font-weight: bold;
+        }
+        .content-row{
+            height : 35px;
+            background-color: whitesmoke;
+        }
+        .content-row td:first-child{
+            text-align: right;
+        }
+        .button-row{
+            text-align: center;
+            background-color: whitesmoke;
+            margin: 0px;
+        }
+            
+        
+    </style>
+</head>
+
+<body>
+    <table border = "1" >
+        <tr class="step-header">
+            <td colspan="2">Step1 : 아이디/비번 입력</td>
+        </tr>
+        <tr class="content-row">
+            <td >
+                아이디:</td>
+            <td ><input type="text"></td>
+        </tr>
+        <tr class="content-row">
+            <td>비밀번호:</td>
+            <td><input type="password"></td>
+        </tr>
+        <tr class="content-row">
+            <td>비밀번호 확인:</td>
+            <td><input type="password"></td>
+        </tr>
+
+        <tr class="step-header">
+            <td colspan="2">Step2 : 개인정보</td>
+        </tr>
+        <tr class="content-row">
+            <td>성별:</td>
+            <td>
+            남 <input type="radio" name="gender">
+            여 <input type="radio" name="gender">
+            </td>
+        </tr>
+        <tr class="content-row">
+            <td>혈액형:</td>
+            <td><select>
+                <option>A형</option>
+                <option>B형</option>
+                <option>O형</option>
+                <option>AB형</option>
+            </select></td>
+        </tr>
+        <tr class="content-row">
+            <td>생일:</td>
+            <td><input type="date"></td>
+        </tr>
+
+
+        <tr class="step-header">
+            <td colspan="2">Step3: 선호도</td>
+        </tr>
+        <tr class="content-row">
+            <td>취미:</td>
+            <td>
+                축구 <input type="checkbox">
+                야구 <input type="checkbox">
+                농구 <input type="checkbox">
+            </td>
+        </tr>
+        <tr class="content-row">
+            <td>좋아하는 색깔:</td>
+            <td><input type="color"></td>
+        </tr>
+
+        <tr class="step-header">
+            <td colspan="2">Step4: 적고 싶은 말</td>
+        </tr>
+        <tr class="content-row">
+            <td colspan="2">
+                <textarea rows ="5" cols="60"></textarea>
+            </td>
+        </tr>
+
+        <tr class="button-row">
+            <td colspan ="2">
+                <input type="submit" value="제출"><input type="reset" value="초기화">
+            </td>
+        </tr>
+
+    </table>
+    
+</body>
+</html>
