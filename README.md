@@ -1,87 +1,57 @@
-# Web Study Repository
+# Web — HTML·CSS 이론 학습 및 팀 프로젝트
 
-HTML, CSS, JavaScript 학습 과정을 기록한 저장소입니다.
+> **질문** HTML·CSS 이론 학습에서 시작해 팀 프로젝트까지 이어질 수 있을까?
+
+> **답** W3Schools 예제와 Do it! 교재로 기초를 다지고, float·position 레이아웃 실습을 거쳐 카카오맵·기상청 API를 연동한 서울·제주 산책 가이드 웹 서비스를 팀 프로젝트로 완성했다.
 
 ---
 
-## 사용 기술
+## 기술 스택
 
-![HTML](https://img.shields.io/badge/HTML-66.5%25-E34F26?style=flat-square&logo=html5&logoColor=white)
-![CSS](https://img.shields.io/badge/CSS-8.4%25-1572B6?style=flat-square&logo=css3&logoColor=white)
-![Jupyter](https://img.shields.io/badge/Jupyter_Notebook-25.1%25-F37626?style=flat-square&logo=jupyter&logoColor=white)
+![HTML5](https://img.shields.io/badge/HTML5-E34F26?style=flat&logo=html5&logoColor=white)
+![CSS3](https://img.shields.io/badge/CSS3-1572B6?style=flat&logo=css3&logoColor=white)
+![JavaScript](https://img.shields.io/badge/JavaScript-F7DF1E?style=flat&logo=javascript&logoColor=black)
+![Python](https://img.shields.io/badge/Python-3776AB?style=flat&logo=python&logoColor=white)
 
-### 습득 역량
+---
 
-| 분류 | 내용 |
+## 학습 흐름
+
+```
+HTML 기초 태그 ──▶ CSS 선택자·박스 모델 ──▶ float·position 레이아웃 ──▶ 팀 프로젝트(korea_travel)
+```
+
+---
+
+## 폴더 구성
+
+| 폴더 | 주제 |
 |------|------|
-| **HTML** | 문서 구조 설계, 시맨틱 태그, 폼/테이블/미디어 요소 |
-| **CSS** | 선택자, 박스 모델, `flex` / `float` 레이아웃, `border-radius` |
-| **레이아웃** | 2단 컬럼 구조, 반응형 비율 배치 (800×600px 기반) |
-| **실습 도구** | W3School 예제, Jupyter Notebook, VS Code |
+| [w3school](./w3school/) | HTML 기초 — 요소·속성·제목·단락 |
+| [260309](./260309/) | HTML + CSS 첫 실습 — 프로필 페이지 |
+| [260316](./260316/) | HTML 미디어·링크 실습 |
+| [260323](./260323/) | HTML 실습 과제 |
+| [260330](./260330/) | HTML Chapter07 퀴즈 |
+| [260406](./260406/) | CSS float·position 레이아웃 실습 |
+| [260511](./260511/) | HTML·CSS 심화 — 게시판·도형·2단 레이아웃 |
+| [korea_travel](./korea_travel/) | **팀 프로젝트** — 서울·제주 산책 코스 가이드 |
 
 ---
 
-## 학습 목표
+## 팀 프로젝트 — 산책 ON
 
-- [x] HTML 기본 태그 및 문서 구조 이해
-- [x] CSS 선택자, 박스 모델, 레이아웃 학습
-- [x] `flex`, `float` 등 배치 기법 실습
-- [ ] JavaScript 기초 학습
-- [ ] 반응형 웹 디자인 적용
+카카오맵 API와 기상청 단기·중기예보 API를 연동해 서울·제주 산책 코스 검색·지도·날씨를 한 화면에서 제공하는 웹 서비스.
 
----
-
-## 폴더 구조
-
-```
-web/
-├── 0309/           # 첫 번째 웹 프로젝트 (HTML + CSS 기초)
-├── 0316/           # 실습 과제
-├── 260323/         # 실습 과제
-├── 260330/         # 실습 과제
-├── 260511/         # HTML & CSS 심화 실습 (게시판, 도형, 레이아웃)
-├── course/         # 수업 중 HTML + CSS 실습 자료
-├── w3school/       # W3School 예제 실습 (기초 태그, 속성, 단락, 제목)
-└── DO_it_HTML_CSS_JAVA.ipynb  # Do it! 교재 학습 노트
-```
-
----
-
-## 학습 내용
-
-### 0309 — 첫 번째 웹 프로젝트
-- HTML 기본 구조 작성
-- CSS 외부 스타일시트 연결 (`style.css`)
-- 개인 사진을 활용한 프로필 페이지 구성
-
-### w3school — W3School 기초 예제
-- HTML 기본 태그 및 요소 (`basic, elements`)
-- 제목 태그 (`heading`, `headings`)
-- 단락 태그 (`paragraphs`)
-- 속성 활용 (`attribute`)
-
-### course — 수업 실습 자료
-- HTML + CSS 수업 중 실습 자료 모음
-- 날짜별 폴더로 정리 (`260330`, `260406`)
-
-### 260511 — HTML & CSS 심화 실습
-| 파일 | 내용 |
+| 역량 | 내용 |
 |------|------|
-| `ex01_board.html` | 태그 폭/배경색 지정, textarea 속성 활용 게시판 |
-| `ex02_myPage.html` | 100×100px 박스, `border-radius` 도형, 계단식 배치 |
-| `ex03_myPage.html` | 800×600px 기반 2단 컬럼 레이아웃 (`float` / `flex`) |
+| 컴포넌트 분리 구조 | `index.html` 쉘 + `loader.js` fetch 조립 방식 |
+| 카카오맵 API 연동 | 코스별 마커·오버레이·경로 표시 |
+| 기상청 API 파싱 | 단기(0~3일) + 중기(4~7일) 병합으로 7일 예보 구성 |
+| Python 백엔드 | 표준 라이브러리만으로 정적 파일 서빙 + API 프록시 |
+| 조건 검색 필터 | 지역·테마·시간·난이도 조합 동적 렌더링 |
 
 ---
 
-## 실행 방법
+## 참고 교재
 
-각 폴더 내의 `.html` 파일을 브라우저로 열면 바로 확인할 수 있습니다.
-
-```bash
-# 예시: 0309 폴더의 첫 번째 프로젝트 열기
-open 0309/index.html
-```
-
----
-
-> 참고 교재: *Do it! HTML+CSS+자바스크립트 웹 표준의 정석*
+> *Do it! HTML+CSS+자바스크립트 웹 표준의 정석*
