@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>데이터 뷰어</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+<div class="container">
+  <h1>🔍 데이터 뷰어</h1>
+
+  <!-- 탭 버튼 -->
+  <div class="tab-row">
+    <button class="tab-btn active" onclick="showTab('product', this)">상품</button>
+    <button class="tab-btn" onclick="showTab('student', this)">학생</button>
+    <button class="tab-btn" onclick="showTab('todo', this)">To-Do List</button>
+  </div>
+
+  <!-- 상품 탭 -->
+  <div id="tab-product" class="tab-content active">
+    <h2>🛒 상품 목록</h2>
+
+    <div class="result-box">
+      <p class="label">1. id로 상품 찾기 (find)</p>
+      <div class="input-row">
+        <input type="number" id="productIdInput" placeholder="id 입력 (1~10)">
+        <button onclick="searchById()">검색</button>
+      </div>
+      <div id="product-find"></div>
+    </div>
+
+    <div class="result-box">
+      <p class="label">2. 금액 이상 상품 고르기 (filter)</p>
+      <div class="input-row">
+        <input type="number" id="productPriceInput" placeholder="금액 입력 (원)">
+        <button onclick="searchByPrice()">검색</button>
+      </div>
+      <div id="product-filter"></div>
+    </div>
+
+    <div class="result-box">
+      <p class="label">3. 상품 이름만 (map)</p>
+      <div id="product-map"></div>
+    </div>
+    <div class="result-box">
+      <p class="label">5. localStorage에서 불러온 목록</p>
+      <div id="product-saved"></div>
+    </div>
+  </div>
+
+  <!-- 학생 탭 -->
+  <div id="tab-student" class="tab-content">
+    <h2>🎓 학생 목록</h2>
+
+    <div class="result-box">
+      <p class="label">1. id로 학생 찾기 (find)</p>
+      <div class="input-row">
+        <input type="number" id="studentIdInput" placeholder="id 입력 (1~10)">
+        <button onclick="searchStudentById()">검색</button>
+      </div>
+      <div id="student-find"></div>
+    </div>
+
+    <div class="result-box">
+      <p class="label">2. 점수 이상 학생 고르기 (filter)</p>
+      <div class="input-row">
+        <input type="number" id="studentScoreInput" placeholder="점수 입력">
+        <button onclick="searchByScore()">검색</button>
+      </div>
+      <div id="student-filter"></div>
+    </div>
+
+    <div class="result-box">
+      <p class="label">3. 학생 이름만 (map)</p>
+      <div id="student-map"></div>
+    </div>
+    <div class="result-box">
+      <p class="label">5. localStorage에서 불러온 목록</p>
+      <div id="student-saved"></div>
+    </div>
+  </div>
+
+  <!-- To-Do List 탭 -->
+  <div id="tab-todo" class="tab-content">
+    <h2>📝 To-Do List</h2>
+    <div class="input-row">
+      <input type="text" id="todoInput" placeholder="할 일을 입력하세요">
+      <button onclick="addTodo()">추가</button>
+    </div>
+    <div class="filter-row">
+      <button class="filter-btn active" onclick="setFilter('all', this)">전체</button>
+      <button class="filter-btn" onclick="setFilter('todo', this)">미완료</button>
+      <button class="filter-btn" onclick="setFilter('done', this)">완료</button>
+    </div>
+    <p class="count" id="count"></p>
+    <div class="todo-list" id="todoList"></div>
+  </div>
+
+</div>
+<script src="script.js"></script>
+</body>
+</html>

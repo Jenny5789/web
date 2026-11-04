@@ -19,6 +19,7 @@ W3Schools 예제와 Do it! 교재로 HTML·CSS 기초를 익히고, 카카오맵
 - CSS 선택자·박스 모델
 - float·position 레이아웃
 - HTML·CSS 심화 실습 (게시판, 도형, 2단 레이아웃)
+- JavaScript 배열 메소드·localStorage 실습 (데이터 뷰어, To-Do List)
 - 팀 프로젝트 — 카카오맵·기상청 API 연동 웹 서비스
 
 ---
@@ -27,13 +28,14 @@ W3Schools 예제와 Do it! 교재로 HTML·CSS 기초를 익히고, 카카오맵
 
 | 폴더 | 주제 |
 |------|------|
-| [w3school](./w3school/) | HTML 기초 — 요소·속성·제목·단락 |
+| [w3school](./w3school/) | HTML 기초 — 요소·속성·제목·단락, HTML 태그 정리표 |
 | [260309](./260309/) | HTML + CSS 첫 실습 — 프로필 페이지 |
 | [260316](./260316/) | HTML 미디어·링크 실습 |
 | [260323](./260323/) | HTML 실습 과제 |
 | [260330](./260330/) | HTML Chapter07 퀴즈 |
 | [260406](./260406/) | CSS float·position 레이아웃 실습 |
 | [260511](./260511/) | HTML·CSS 심화 — 게시판·도형·2단 레이아웃 |
+| [260608](./260608/) | JavaScript 배열 메소드(find·filter·map)·localStorage — 데이터 뷰어·To-Do List |
 | [korea_travel](./korea_travel/) | **팀 프로젝트** — 서울·제주 산책 코스 가이드 |
 
 ---

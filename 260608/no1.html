@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+  <meta charset="UTF-8">
+  <title>상품 테스트</title>
+</head>
+<body>
+  <script>
+    const products = [
+      { id: 1, name: "노트북", price: 1200000 },
+      { id: 2, name: "마우스", price: 30000 },
+      { id: 3, name: "키보드", price: 80000 }
+    ];
+
+    // id가 2인 상품 찾기
+    console.log("1.", products.find(p => p.id === 2));
+
+    // 가격이 50000원 이상인 상품 고르기
+    console.log("2.", products.filter(p => p.price >= 50000));
+
+    // 상품 이름만 배열로 만들기
+    console.log("3.", products.map(p => p.name));
+
+    // 상품 목록을 localstorage에 저장하기
+    localStorage.setItem("products", JSON.stringify(products));
+
+    // 저장된 상품 목록을 다시 불러오기
+    const saved = JSON.parse(localStorage.getItem("products"));
+
+    console.log("5.", saved);
+  </script>
+</body>
+</html>

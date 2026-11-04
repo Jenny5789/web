@@ -31,6 +31,7 @@ HTML 요소 구조 ──▶ 속성(href, src, alt, style) ──▶ 제목 태�
 | `w3school_heading.html` | 제목 태그 + style 속성 | `<h1>`~`<h6>`, `font-size` |
 | `w3school_headings.html` | 제목 계층 구조 실습 | `<h1>` ~ `<h3>` |
 | `w3school_paragraphs.html` | 단락·공백·줄바꿈 | `<p>`, `<hr>`, `<br>`, `<pre>` |
+| [`HTML_Element_Reference.md`](./HTML_Element_Reference.md) | HTML 태그 전체 정리 (용도별, HTML5 미지원 태그 포함) | 수업 자료 PDF 를 한국어로 정리 |
 
 ---
 

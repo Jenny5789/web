@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+  <meta charset="UTF-8">
+  <title>학생 테스트</title>
+</head>
+<body>
+  <script>
+    const students = [
+      { id: 1, name: "김민준", score: 95 },
+      { id: 2, name: "이서연", score: 72 },
+      { id: 3, name: "박지호", score: 88 },
+      { id: 4, name: "최수아", score: 61 },
+      { id: 5, name: "정우진", score: 79 },
+      { id: 6, name: "한예은", score: 93 },
+      { id: 7, name: "오민서", score: 55 },
+      { id: 8, name: "윤도현", score: 84 },
+      { id: 9, name: "임지우", score: 67 },
+      { id: 10, name: "강하은", score: 91 }
+    ];
+
+    // 1. id가 3인 학생 찾기
+    console.log("1.", students.find(s => s.id === 3));
+
+    // 2. 70점 이상인 학생 고르기
+    console.log("2.", students.filter(s => s.score >= 70));
+
+    // 3. 학생 이름만 배열로 만들기
+    console.log("3.", students.map(s => s.name));
+
+    // 4. 학생 목록을 localStorage에 저장하기
+    localStorage.setItem("students", JSON.stringify(students));
+
+    // 5. 저장된 학생 목록 다시 불러오기
+    const saved = JSON.parse(localStorage.getItem("students"));
+    console.log("5.", saved);
+  </script>
+</body>
+</html>
