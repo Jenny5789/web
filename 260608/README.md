@@ -2,7 +2,7 @@
 
 > **질문** 배열 메소드 `find`, `filter`, `map` 과 `localStorage` 를 화면에 직접 연결할 수 있을까?
 
-> **답** 콘솔 실습(no1, no3)으로 메소드를 먼저 익히고, 입력값에 따라 결과를 보여 주는 탭형 데이터 뷰어와 To-Do List 로 확장했다.
+> **답** 콘솔 실습(no1, no3)으로 메소드를 먼저 익히고, 입력값에 따라 결과를 보여 주는 탭형 데이터 뷰어와 To-Do List 로 확장했습니다.
 
 📅 2026-06-08
 
@@ -38,7 +38,7 @@
 
 ## 1. 콘솔 실습 — no1.html / no3.html
 
-화면 없이 `console.log` 로 결과를 확인했다.
+화면 없이 `console.log` 로 결과를 확인했습니다.
 
 ```js
 const products = [
@@ -83,7 +83,7 @@ const saved = JSON.parse(localStorage.getItem("products"));   // 문자열 → �
 
 ## 2. 데이터 뷰어 — index.html
 
-콘솔 실습을 화면으로 옮겼다. 입력창에 값을 넣고 **검색** 을 누르면 결과가 바로 아래에 나온다.
+콘솔 실습을 화면으로 옮겼습니다. 입력창에 값을 넣고 **검색** 을 누르면 결과가 바로 아래에 나옵니다.
 
 ### 상품 탭
 
@@ -124,7 +124,7 @@ function showTab(tabName, btn) {
 
 ## 3. To-Do List
 
-할 일 추가 · 완료 체크 · 삭제 · 전체/미완료/완료 필터. 새로고침해도 `localStorage` 에 남아 있다.
+할 일 추가 · 완료 체크 · 삭제 · 전체/미완료/완료 필터. 새로고침해도 `localStorage` 에 남아 있습니다.
 
 <img src="./images/tab_todo.png" width="450" alt="To-Do List 탭">
 

@@ -2,7 +2,7 @@
 
 > **질문** `float`과 `position`으로 다단 레이아웃을 직접 구현할 수 있을까?
 
-> **답** 2단·3단 레이아웃을 `float`으로, 텍스트 배치를 `position: absolute`로 구현하고 카드 UI 퀴즈로 마무리했다.
+> **답** 2단·3단 레이아웃을 `float`으로, 텍스트 배치를 `position: absolute`로 구현하고 카드 UI 퀴즈로 마무리했습니다.
 
 CSS 레이아웃의 핵심인 `float`·`clear` 패턴과 `position` 속성을 실습한 수업 결과물.
 
