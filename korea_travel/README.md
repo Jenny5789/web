@@ -1,8 +1,12 @@
+<div align="center">
+
 # 산책 ON
 
-![메인 화면](images/screenshots/01_main.jpg)
+서울과 제주의 산책 코스, 맛집, 날씨 정보를 한 화면에서 — **Kakao Map · 기상청 API**
 
-서울과 제주의 산책 코스, 맛집, 날씨 정보를 한 화면에서 — Kakao Map · 기상청 API
+<img src="images/screenshots/01_main.jpg" alt="산책 ON 메인 화면" width="88%" />
+
+</div>
 
 ## 1. 프로젝트 개요
 
@@ -21,20 +25,22 @@
 
 ## 2. 서비스 구조
 
-![서비스 구조](service_flow.svg)
+<p align="center">
+  <img src="service_flow.svg" alt="서비스 구조" width="100%" />
+</p>
 
 ## 3. 실제 구현 화면
 
 ### 산책 ON 주요 화면
 
 | 메인 화면 | 코스 추천 결과 |
-|---------|-------------|
-| ![메인 화면](images/screenshots/01_main.jpg) | ![코스 추천 결과](images/screenshots/03_result.jpg) |
+| --- | --- |
+| <img src="images/screenshots/01_main.jpg" width="100%" alt="메인 화면"> | <img src="images/screenshots/03_result.jpg" width="100%" alt="코스 추천 결과"> |
 | ① 메인 화면 · 코스 탐색 · 서비스 소개 | ② 코스 추천 결과 · 필터 적용 후 목록 표시 |
 
 | 7일 날씨 | 카카오맵 플래너 |
-|---------|--------------|
-| ![날씨](images/screenshots/04_weather.jpg) | ![지도](images/screenshots/05_map.jpg) |
+| --- | --- |
+| <img src="images/screenshots/04_weather.jpg" width="100%" alt="7일 날씨"> | <img src="images/screenshots/05_map.jpg" width="100%" alt="카카오맵 플래너"> |
 | ③ 7일 날씨 예보 · 단기 + 중기 합산 표시 | ④ 카카오맵 코스 플래너 · 경로 및 거리 계산 |
 
 ## 4. 주요 기능
