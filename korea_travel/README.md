@@ -29,7 +29,7 @@
   <img src="service_flow.svg" alt="서비스 구조" width="100%" />
 </p>
 
-## 3. 실제 구현 화면
+## 3. 주요 화면
 
 ### 산책 ON 주요 화면
 
