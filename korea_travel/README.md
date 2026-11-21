@@ -2,7 +2,7 @@
 
 # 산책 ON
 
-서울과 제주의 산책 코스, 맛집, 날씨 정보를 한 화면에서 — **Kakao Map · 기상청 API**
+Vanilla JS·API 연동·팀 협업으로 완성한 **프론트엔드 웹 서비스**
 
 <img src="images/screenshots/01_main.jpg" alt="산책 ON 메인 화면" width="88%" />
 
