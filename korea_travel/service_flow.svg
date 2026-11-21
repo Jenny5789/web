@@ -1,0 +1,60 @@
+<svg width="680" height="310" viewBox="0 0 680 310" xmlns="http://www.w3.org/2000/svg" font-family="'Malgun Gothic', 'Apple SD Gothic Neo', sans-serif">
+  <defs>
+    <marker id="arrow" viewBox="0 0 10 10" refX="8" refY="5" markerWidth="6" markerHeight="6" orient="auto-start-reverse">
+      <path d="M2 1L8 5L2 9" fill="none" stroke="#bbb" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+    </marker>
+  </defs>
+
+  <rect width="680" height="310" fill="white"/>
+
+  <!-- 화면 구성 흐름 -->
+  <text x="20" y="24" font-size="12" font-weight="600" fill="#3d7a5e">화면 구성 흐름</text>
+
+  <rect x="20" y="34" width="150" height="56" rx="4" fill="white" stroke="#e0e0e0" stroke-width="1"/>
+  <text x="95" y="59" text-anchor="middle" font-size="13" font-weight="600" fill="#222">index.html</text>
+  <text x="95" y="77" text-anchor="middle" font-size="11" fill="#888">진입점 · 빈 껍데기</text>
+
+  <line x1="170" y1="62" x2="198" y2="62" stroke="#bbb" stroke-width="1" marker-end="url(#arrow)"/>
+
+  <rect x="200" y="34" width="150" height="56" rx="4" fill="white" stroke="#e0e0e0" stroke-width="1"/>
+  <text x="275" y="59" text-anchor="middle" font-size="13" font-weight="600" fill="#222">loader.js</text>
+  <text x="275" y="77" text-anchor="middle" font-size="11" fill="#888">화면 조각 동적 주입</text>
+
+  <line x1="350" y1="62" x2="378" y2="62" stroke="#bbb" stroke-width="1" marker-end="url(#arrow)"/>
+
+  <rect x="380" y="34" width="165" height="56" rx="4" fill="white" stroke="#e0e0e0" stroke-width="1"/>
+  <text x="462" y="59" text-anchor="middle" font-size="13" font-weight="600" fill="#222">html/ 화면 조각</text>
+  <text x="462" y="77" text-anchor="middle" font-size="11" fill="#888">코스 · 날씨 · 지도 · 리뷰</text>
+
+  <line x1="20" y1="108" x2="660" y2="108" stroke="#f0f0f0" stroke-width="1"/>
+
+  <!-- 서비스 요청 흐름 -->
+  <text x="20" y="130" font-size="12" font-weight="600" fill="#3d7a5e">서비스 요청 흐름</text>
+
+  <rect x="20" y="140" width="140" height="68" rx="4" fill="white" stroke="#e0e0e0" stroke-width="1"/>
+  <text x="90" y="163" text-anchor="middle" font-size="13" font-weight="600" fill="#222">사용자</text>
+  <text x="90" y="181" text-anchor="middle" font-size="11" fill="#888">브라우저 접속</text>
+  <text x="90" y="197" text-anchor="middle" font-size="11" fill="#888">localhost:8000</text>
+
+  <line x1="160" y1="174" x2="188" y2="174" stroke="#bbb" stroke-width="1" marker-end="url(#arrow)"/>
+
+  <rect x="190" y="140" width="145" height="68" rx="4" fill="white" stroke="#e0e0e0" stroke-width="1"/>
+  <text x="262" y="163" text-anchor="middle" font-size="13" font-weight="600" fill="#222">server.py</text>
+  <text x="262" y="181" text-anchor="middle" font-size="11" fill="#888">정적 파일 서빙</text>
+  <text x="262" y="197" text-anchor="middle" font-size="11" fill="#888">기상청 API 프록시</text>
+
+  <line x1="335" y1="174" x2="363" y2="174" stroke="#bbb" stroke-width="1" marker-end="url(#arrow)"/>
+  <text x="349" y="168" text-anchor="middle" font-size="10" fill="#bbb">중계</text>
+
+  <rect x="365" y="140" width="158" height="68" rx="4" fill="white" stroke="#e0e0e0" stroke-width="1"/>
+  <text x="444" y="163" text-anchor="middle" font-size="13" font-weight="600" fill="#222">기상청 API</text>
+  <text x="444" y="181" text-anchor="middle" font-size="11" fill="#888">단기예보 D~D+3</text>
+  <text x="444" y="197" text-anchor="middle" font-size="11" fill="#888">중기예보 D+4~D+7</text>
+
+  <path d="M90 208 L90 248 L363 248" fill="none" stroke="#bbb" stroke-width="1" marker-end="url(#arrow)"/>
+  <text x="210" y="243" text-anchor="middle" font-size="10" fill="#bbb">직접 호출</text>
+
+  <rect x="365" y="230" width="158" height="50" rx="4" fill="white" stroke="#e0e0e0" stroke-width="1"/>
+  <text x="444" y="251" text-anchor="middle" font-size="13" font-weight="600" fill="#222">Kakao Map API</text>
+  <text x="444" y="269" text-anchor="middle" font-size="11" fill="#888">마커 · 경로 · 거리 계산</text>
+</svg>
